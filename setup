@@ -7,7 +7,12 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # Install Tmux.
 echo "Installing Tmux..."
 brew install tmux
+if [ -f ~/.tmux.conf ]; then
+  echo "Removing prevoius Tmux configuration..."
+  rm ~/.tmux.conf
+fi
 ln -n .tmux.conf ~/.tmux.conf
+echo "Tmux configured sucessfully."
 
 echo "Configuring bash shell..."
 # Create a hard symlink to user's .bash_aliases file.
