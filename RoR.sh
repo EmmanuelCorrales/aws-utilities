@@ -1,3 +1,4 @@
+#!/bin/bash
 brew install rbenv ruby-build
 
 # Add rbenv to bash so that it loads every time you open a terminal
