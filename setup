@@ -2,3 +2,11 @@
 
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Create a hard symlink to user's .bash_aliases file.
+ln -n .bash_aliases ~/.bash_aliases
+
+# Make .bash_profile load .bash_aliases aliases.
+echo "if [ -f ~/.bashrc ]; then" >>  ~/.bash_profile
+echo ". ~/.bash_aliases" >>  ~/.bash_profile
+echo "fi" >>  ~/.bash_profile
