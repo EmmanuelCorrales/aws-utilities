@@ -1,12 +1,15 @@
 #!/bin/bash
 
 # Install Homebrew
+echo "Installing Homebrew..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install Tmux.
+echo "Installing Tmux..."
 brew install tmux
 ln -n .tmux.conf ~/.tmux.conf
 
+echo "Configuring bash shell..."
 # Create a hard symlink to user's .bash_aliases file.
 ln -n .bash_aliases ~/.bash_aliases
 
@@ -14,3 +17,5 @@ ln -n .bash_aliases ~/.bash_aliases
 echo "if [ -f ~/.bashrc ]; then" >>  ~/.bash_profile
 echo ". ~/.bash_aliases" >>  ~/.bash_profile
 echo "fi" >>  ~/.bash_profile
+
+echo "Please restart your Mac to apply changes."
