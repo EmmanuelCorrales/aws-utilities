@@ -3,6 +3,10 @@
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Install Tmux.
+brew install tmux
+ln -n .tmux.conf ~/.tmux.conf
+
 # Create a hard symlink to user's .bash_aliases file.
 ln -n .bash_aliases ~/.bash_aliases
 
