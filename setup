@@ -14,11 +14,18 @@ fi
 ln -n .tmux.conf ~/.tmux.conf
 echo "Tmux configured sucessfully."
 
+
+# BASH CONFIGURATIONS
 echo "Configuring bash shell..."
-# Create a hard symlink to user's .bash_aliases file.
+
+if [ -f ~/.bash_aliases ]; then
+  echo "Removing prevoius bash_aliases..."
+  rm ~/.bash_aliases
+fi
 ln -n .bash_aliases ~/.bash_aliases
 
 # Make .bash_profile load .bash_aliases aliases.
+echo "# Load aliases form .bash_aliases."
 echo "if [ -f ~/.bash_aliases ]; then" >>  ~/.bash_profile
 echo ". ~/.bash_aliases" >>  ~/.bash_profile
 echo "fi" >>  ~/.bash_profile
