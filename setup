@@ -25,7 +25,8 @@ fi
 ln -n .bash_aliases ~/.bash_aliases
 
 # Make .bash_profile load .bash_aliases aliases.
-echo "# Load aliases form .bash_aliases."
+echo "" >>  ~/.bash_profile
+echo "# Load aliases form .bash_aliases." >>  ~/.bash_profile
 echo "if [ -f ~/.bash_aliases ]; then" >>  ~/.bash_profile
 echo ". ~/.bash_aliases" >>  ~/.bash_profile
 echo "fi" >>  ~/.bash_profile
