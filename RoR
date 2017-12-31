@@ -11,6 +11,7 @@ rbenv global 2.4.3
 ruby -v
 
 # Install rails.
+echo "Installing rails..."
 gem install rails -v 5.1.4
 
 # Install sqlite 3.
