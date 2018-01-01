@@ -39,4 +39,4 @@ echo "if [ -f ~/.bash_aliases ]; then" >>  ~/.bash_profile
 echo ". ~/.bash_aliases" >>  ~/.bash_profile
 echo "fi" >>  ~/.bash_profile
 
-echo "Please restart your Mac to apply changes."
+. ~/.bash_profile
