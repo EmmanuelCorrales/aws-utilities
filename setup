@@ -5,7 +5,7 @@ echo "Installing Homebrew..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install Tmux.
-echo "Installing Tmux..."
+echo "Installing tmux..."
 brew install tmux
 if [ -f ~/.tmux.conf ]; then
   echo "Removing prevoius Tmux configuration..."
@@ -13,6 +13,14 @@ if [ -f ~/.tmux.conf ]; then
 fi
 ln -n .tmux.conf ~/.tmux.conf
 echo "Tmux configured sucessfully."
+
+# Install and configure GNU sed because OSX sed is not standard.
+echo "Installing GNU sed..."
+brew install gnu-sed
+echo "" >>  ~/.bash_profile
+echo "# GNU sed configurations." >> ~/.bash_profile
+echo 'export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"' >> ~/.bash_profile
+echo 'export MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"' >> ~/.bash_profile
 
 
 # BASH CONFIGURATIONS
