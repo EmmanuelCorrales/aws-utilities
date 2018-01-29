@@ -14,3 +14,8 @@ npm -g install typescript
 # Install create react app.
 echo "Installing create-react-app..."
 npm install -g create-react-app
+
+# Install Yarn.
+echo "Installing Yarn..."
+brew install yarn
+yarn -v
