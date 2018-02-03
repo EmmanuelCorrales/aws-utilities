@@ -4,6 +4,8 @@
 echo "Installing Homebrew..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew install tig
+
 # Install Tmux.
 echo "Installing tmux..."
 brew install tmux
