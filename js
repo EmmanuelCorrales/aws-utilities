@@ -12,14 +12,6 @@ export NVM_DIR="$HOME/.nvm"
 nvm install --lts
 node -v
 
-# Install typescript globally.
-echo "Installing typescript..."
-npm -g install typescript
-
-# Install create react app.
-echo "Installing create-react-app..."
-npm install -g create-react-app
-
 # Install Yarn.
 echo "Installing Yarn..."
 brew install yarn
