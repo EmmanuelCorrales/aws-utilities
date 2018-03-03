@@ -1,0 +1,3 @@
+#!/bin/bash
+brew tap caskroom/versions
+brew cask install java8
