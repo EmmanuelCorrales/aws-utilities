@@ -6,3 +6,5 @@ fi
 export PS1='\[\e[32m\]#>\[\e[m\] '
 export EDITOR=vim
 export REACT_EDITOR=vim
+
+set -o vi
