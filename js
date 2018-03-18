@@ -14,5 +14,5 @@ node -v
 
 # Install Yarn.
 echo "Installing Yarn..."
-brew install yarn
+brew install yarn --without-node
 yarn -v
