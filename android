@@ -1,7 +1,0 @@
-#!/bin/bash
-echo "" >> ~/.bash_profile
-echo "# Android configurations" >> ~/.bash_profile
-echo 'export ANDROID_HOME="/Users/emmanuel/Library/Android/sdk"' >> ~/.bash_profile
-echo 'export ANDROID_NDK="$ANDROID_HOME/ndk-bundle"' >> ~/.bash_profile
-echo 'export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_NDK"' >> ~/.bash_profile
-. ~/.bash_profile
